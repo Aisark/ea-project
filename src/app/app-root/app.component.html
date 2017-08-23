@@ -1,6 +1,28 @@
 <md-toolbar color="primary">
-    <span>Menú</span>
+    <span>Lector</span>
     <span class="spacer"></span>
     <md-icon class="icon">favorite</md-icon>
     <md-icon class="icon">delete</md-icon>
+    <a md-button routerLink="">Biblioteca</a>
+    <a md-button routerLink="/reader">Lector</a>
+    <md-menu #modRead="mdMenu" yPosition="below" [overlapTrigger]="false">
+        <button md-menu-item>Normal</button>
+        <button md-menu-item>Clasica</button>
+    </md-menu>
+    <button md-icon-button [mdMenuTriggerFor]="modRead">
+        <md-icon>book</md-icon>
+    </button>
+    <button type="button" md-icon-button (click)="navlat.toggle()">
+        <md-icon>more_vert</md-icon>
+    </button>
+
 </md-toolbar>
+
+<md-sidenav-container class="container">
+    <md-sidenav #navlat class="sidenav" mode="side" align="end">
+        <app-sidenav></app-sidenav>
+    </md-sidenav>
+    <div class="sidenav-content">
+        <router-outlet></router-outlet>
+    </div>
+</md-sidenav-container>
