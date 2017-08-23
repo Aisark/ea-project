@@ -4,21 +4,29 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 // Modulos
 import { MaterialModule } from './modules/material/material.module'
+import { RoutesModule } from './modules/routes/routes.module'
 
 // Components
 import { AppComponent } from './app-root/app.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { LibraryComponent } from './components/library/library.component';
+import { ReaderComponent } from './components/reader/reader.component';
 
 // Modulos Externos
-import 'hammerjs'
+import 'hammerjs';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SidenavComponent,
+    LibraryComponent,
+    ReaderComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    RoutesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
