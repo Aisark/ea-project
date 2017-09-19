@@ -1,3 +1,7 @@
-<p>
-  reader works!
-</p>
+<div class="container">
+    <ul>
+        <li *ngFor="let item of items | async ">
+            {{item.$key}}
+        </li>
+    </ul>
+</div>

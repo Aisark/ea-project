@@ -1,0 +1,21 @@
+<div class="container">
+    <img [src]="book.coverPage">
+    <div class="content">
+        <div>
+            <h5>Titulo: </h5><span>{{book.title}}</span>
+        </div>
+        <div>
+            <h5>Autor: </h5><span>{{book.autor}}</span>
+        </div>
+        <div>
+            <h5>Volumenes: </h5><span>{{book.volumes}}</span>
+        </div>
+        <div>
+            <h5>Argumento: </h5><span>{{book.plot}}</span>
+        </div>
+        <div>
+            <h5>Genero: </h5><span>{{book.genere}}</span>
+        </div>
+        <button md-button (click)="goBack()">back</button>
+    </div>
+</div>

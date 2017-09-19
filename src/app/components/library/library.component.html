@@ -1,3 +1,22 @@
-<p>
-  library works!
-</p>
+<div class="container">
+    <md-card *ngFor="let book of books">
+        <img md-card-image [src]="book.coverPage">
+        <md-card-actions>
+            <a color="accent" md-button [routerLink]="['/detail',book.id]">Read</a>
+        </md-card-actions>
+    </md-card>
+
+    <md-card *ngFor="let book of books">
+        <img md-card-image [src]="book.coverPage">
+        <md-card-actions>
+            <a color="accent" md-button [routerLink]="['/detail',book.id]">Read</a>
+        </md-card-actions>
+    </md-card>
+
+    <md-card *ngFor="let book of books">
+        <img md-card-image [src]="book.coverPage">
+        <md-card-actions>
+            <a color="accent" md-button [routerLink]="['/detail',book.id]">Read</a>
+        </md-card-actions>
+    </md-card>
+</div>

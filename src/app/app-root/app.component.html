@@ -3,7 +3,6 @@
     <span class="spacer"></span>
     <md-icon class="icon">favorite</md-icon>
     <md-icon class="icon">delete</md-icon>
-    <a md-button routerLink="">Biblioteca</a>
     <a md-button routerLink="/reader">Lector</a>
     <md-menu #modRead="mdMenu" yPosition="below" [overlapTrigger]="false">
         <button md-menu-item>Normal</button>
@@ -22,7 +21,7 @@
     <md-sidenav #navlat class="sidenav" mode="side" align="end">
         <app-sidenav></app-sidenav>
     </md-sidenav>
-    <div class="sidenav-content">
+    <div class="content">
         <router-outlet></router-outlet>
     </div>
 </md-sidenav-container>

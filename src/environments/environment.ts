@@ -4,5 +4,13 @@
 // The list of which env maps to which file can be found in `.angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyC7WPKt80F6R7f40VQYkIzQxpFm_4dxq-U',
+    authDomain: 'mangatron-aisark.firebaseapp.com',
+    databaseURL: 'https://mangatron-aisark.firebaseio.com' ,
+    projectId: 'mangatron-aisark' ,
+    storageBucket: 'mangatron-aisark.appspot.com' ,
+    messagingSenderId: '1078615033322'
+  }
 };

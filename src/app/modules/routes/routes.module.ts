@@ -7,10 +7,15 @@ import { RouterModule, Routes } from '@angular/router'
 import { AppComponent } from '../../app-root/app.component'
 import { LibraryComponent } from '../../components/library/library.component'
 import { ReaderComponent } from '../../components/reader/reader.component'
+import { DetailComponent } from '../../components/detail/detail.component'
+import { UnzipComponent } from '../../components/unzip/unzip.component'
 
 const routes: Routes = [
-  {path: '', component: LibraryComponent},
-  {path: 'reader', component: ReaderComponent}
+  {path: '', redirectTo: '/library', pathMatch: 'full'},
+  {path: 'reader', component: ReaderComponent},
+  { path: 'library', component: LibraryComponent},
+  {path: 'detail/:id', component: DetailComponent},
+  {path: 'load', component: UnzipComponent}
 ]
 
 @NgModule({
